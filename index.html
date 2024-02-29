@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="calender">
+      <div class="container">
+        <div class="input-felids">
+          <div class="input-box">
+            <label for="day" id="labeld">DAY</label>
+            <input
+              type="number"
+              class="input-field day"
+              id="input-day"
+              placeholder="DD"
+            />
+            <p class="valid" id="vday"></p>
+          </div>
+
+          <div class="input-box">
+            <label for="month" id="labelm">MONTH</label>
+            <input
+              type="number"
+              class="input-field month"
+              id="input-month"
+              placeholder="MM"
+            />
+            <p id="vmonth" class="valid"></p>
+          </div>
+
+          <div class="input-box">
+            <label for="year" id="labely">YEAR</label>
+            <input
+              type="number"
+              class="input-field year"
+              id="input-year"
+              placeholder="YYYY"
+            />
+            <p class="valid" id="vyear"></p>
+          </div>
+        </div>
+        <div class="input-button">
+          <hr />
+          <button class="calc-button" onclick="calc()">
+            <img src="assets/images/icon-arrow.svg" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="age">
+        <h3 class="res"><span id="res-year">- - </span>Years</h3>
+        <h3 class="res"><span id="res-month">- - </span>months</h3>
+        <h3 class="res"><span id="res-day">- - </span>days</h3>
+      </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
